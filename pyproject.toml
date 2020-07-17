@@ -5,8 +5,10 @@ description = "test"
 authors = ["解释 <xieshi@forchange.tech>"]
 
 [tool.poetry.dependencies]
-python = "3.7"
+python = "^3.7"
 requests = "^2.24.0"
+pytest = "^5.4"
+grpcio = "^1.30.0"
 
 [tool.poetry.dev-dependencies]
 
