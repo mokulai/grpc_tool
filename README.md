@@ -1,14 +1,8 @@
-# grpc测试工具
+# grpc_tool
 
 一共两个方式
 1. 纯python，把python代码对grpc的处理用字符串进行拼接，然后转为可执行代码
 2. python+go，使用python做为testcase层，go项目[grpcox](https://github.com/gusaul/grpcox)作为grpc请求的解释层
-
-
-## 项目使用到的开源工具
-
-grpcox服务，[grpcox](https://github.com/gusaul/grpcox)
-
 
 ## 使用方式
 
