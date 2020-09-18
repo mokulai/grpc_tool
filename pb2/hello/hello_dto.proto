@@ -1,0 +1,25 @@
+// Copyright 2015, Google Inc.
+// All rights reserved.
+// ...
+syntax = "proto3";
+package hello_dto;
+
+
+option go_package = "hello_dto";
+
+option java_generic_services = true;
+option java_package= "hello_dto";
+
+message Req{
+    string height = 1;
+}
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+  Req request_height = 2;
+}
+
+// The response message containing the greetings
+message HelloReply {
+  string message = 1;
+}

@@ -1,0 +1,16 @@
+// Copyright 2015, Google Inc.
+// All rights reserved.
+// ...
+syntax = "proto3";
+package hello;
+
+option java_generic_services = true;
+option java_package = "hello_app";
+
+import "hello_dto.proto";
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (hello_dto.HelloRequest) returns (hello_dto.HelloReply) {}
+}
